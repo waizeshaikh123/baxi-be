@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baxify</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="http://baxify.com/assets/images/logo.svg">
+</head>
+
+<body>
+    <!-- nav-one -->
+    <nav class="nav-one">
+        <div class="row d-flex">
+            <div class="left d-flex">
+                <div class="email d-flex">
+                    <i class="ri-mail-line"></i>
+                    <span>baxify.contact@gmail.com</span>
+                </div>
+                <div class="call d-flex">
+                    <i class="ri-phone-fill"></i>
+                    <span>+1 512 434 6781</span>
+                </div>
+            </div>
+            <div class="right d-flex">
+                <div class="face d-flex">
+                    <i class="ri-facebook-fill"></i>
+                    <span>facebook</span>
+                </div>
+                <div class="ins d-flex">
+                    <i class="ri-instagram-line"></i>
+                    <span>instagram</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- @2nd navbar -->
+
+    <nav class="nav-2nd">
+        <div class="row-2 d-flex">
+            <div class="logo">
+                <img src="http://baxify.com/assets/images/logo.svg" alt="">
+            </div>
+            <div class="list">
+                <ul class="d-flex">
+                    <li class="{% if request.path == '/' %} active {% endif %}" ><a href="/">home</a></li>
+                    <li class="{% if request.path == '/pricing/' %} active {% endif %}" ><a href="/pricing">Pricing</a></li>
+                    <li class="{% if request.path == '/contact/' %} active {% endif %}" ><a href="/contact">Contact Us</a></li>
+                    <li class="{% if request.path == '/privacy-policy/' %} active {% endif %}" ><a href="/privacy-policy">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="btn">
+                <a href="/logIn"><button class="log">Login</button></a>
+                <a href="/logOut"><button class="reg">Register</button></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Contact section -->
+
+    <section class="contact">
+        <h1>Baxify Services Area</h1>
+        <p>We’re providing our services in following areas</p>
+        <div class="main-map">
+            <div class="map">
+                <div class="maping">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2123.1530051151767!2d68.31314805059634!3d25.36311456400221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c7a8bdc27fd41%3A0x867fec1dac0cce41!2sKotri%20City%20High%20School%20Rd%2C%20Kotri%2C%20Hyderabad%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1691082441099!5m2!1sen!2s"
+                        width="600" height="270" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h2>Lubbock Texas</h2>
+                </div>
+                <div class="maping">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2123.1530051151767!2d68.31314805059634!3d25.36311456400221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c7a8bdc27fd41%3A0x867fec1dac0cce41!2sKotri%20City%20High%20School%20Rd%2C%20Kotri%2C%20Hyderabad%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1691082441099!5m2!1sen!2s"
+                        width="600" height="270" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h2>San Antonio</h2>
+                </div>
+                <div class="maping">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2123.1530051151767!2d68.31314805059634!3d25.36311456400221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c7a8bdc27fd41%3A0x867fec1dac0cce41!2sKotri%20City%20High%20School%20Rd%2C%20Kotri%2C%20Hyderabad%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1691082441099!5m2!1sen!2s"
+                        width="600" height="270" style="border:0; " allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h2>Austin Texas</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form  -->
+
+    <section class="form">
+        <div class="child-form">
+            <div class="main-left">
+                <div class="left-text">
+                    <h1>Get In touch with us</h1>
+                    <p>You can reach out to us through our contact form, and our team will respond to your inquiry
+                        within 24
+                        hours. Alternatively, you can contact us via email or phone.</p>
+                </div>
+                <div class="needs pad">
+                    <div class="main">
+                        <div class="image font">
+                            <i class="ri-phone-fill"></i>
+                        </div>
+                        <div class="text-postage font-color">
+                            <h2>Phone Number
+                            </h2>
+                            <p>+1 512 434 6781</p>
+                        </div>
+                    </div>
+                    <div class="main">
+                        <div class="image font">
+                            <i class="ri-mail-send-line"></i>
+                        </div>
+                        <div class="text-postage">
+                            <h2>Email</h2>
+                            <p>baxify.contact@gmail.com
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main">
+                        <div class="image font">
+                            <i class="ri-map-pin-line"></i>
+                        </div>
+                        <div class="text-postage">
+                            <h2>Our Location
+                            </h2>
+                            <p>99 St Jambolo Park 2892, San Texas
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-left">
+                <div class="padding">
+                    <div class="full-form">
+                        <h1>Send us Message</h1>
+                        <form>
+                            <br>
+                            <div class="input-div">
+                                <h5>Full Name</h5>
+                                <!-- <br> -->
+                                <input type="text" placeholder="Enter Your full Name">
+                            </div>
+                            <br>
+                            <div class="input-div">
+                                <h5>Email</h5>
+                                <!-- <br> -->
+                                <input type="email" placeholder="Enter Your email address">
+                            </div>
+                            <br>
+                            <div class="input-div">
+                                <h5>Subject</h5>
+                                <!-- <br> -->
+                                <input type="text" placeholder="Enter Subject">
+                            </div>
+                            <br>
+                            <div class="input-div">
+                                <h5>Message</h5>
+                                <!-- <br> -->
+                                <textarea placeholder="Message" cols="30"></textarea>
+                                <div class="btn-btn">
+                                    <a href="#">Send Message</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form END -->
+
+    <!-- contact End -->
+
+    <!-- footer section -->
+
+    <section class="footer">
+        <img src="http://baxify.com/assets/images/logo.svg" alt="">
+        <div class="icons">
+            <div class="footer-icons">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="hr"></div>
+            <div class="footer-fonts">
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-pinterest-fill"></i></a>
+            </div>
+            <div class="main-child">
+                © 2023 All rights reserved.
+                <a href="index.html">Baxify</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

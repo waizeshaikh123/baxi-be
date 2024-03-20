@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baxify</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="http://baxify.com/assets/images/logo.svg">
+</head>
+
+<body>
+    <!-- nav-one -->
+    <nav class="nav-one">
+        <div class="row d-flex">
+            <div class="left d-flex">
+                <div class="email d-flex">
+                    <i class="ri-mail-line"></i>
+                    <span>baxify.contact@gmail.com</span>
+                </div>
+                <div class="call d-flex">
+                    <i class="ri-phone-fill"></i>
+                    <span>+1 512 434 6781</span>
+                </div>
+            </div>
+            <div class="right d-flex">
+                <div class="face d-flex">
+                    <i class="ri-facebook-fill"></i>
+                    <span>facebook</span>
+                </div>
+                <div class="ins d-flex">
+                    <i class="ri-instagram-line"></i>
+                    <span>instagram</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- @2nd navbar -->
+
+    <nav class="nav-2nd">
+        <div class="row-2 d-flex">
+            <div class="logo">
+                <img src="http://baxify.com/assets/images/logo.svg" alt="">
+            </div>
+            <div class="list">
+                <ul class="d-flex">
+                    <li class="{% if request.path == '/' %} active {% endif %}" ><a href="/">home</a></li>
+                    <li class="{% if request.path == '/pricing/' %} active {% endif %}" ><a href="/pricing">Pricing</a></li>
+                    <li class="{% if request.path == '/contact/' %} active {% endif %}" ><a href="/contact">Contact Us</a></li>
+                    <li class="{% if request.path == '/privacy-policy/' %} active {% endif %}" ><a href="/privacy-policy">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="btn">
+                <a href="/logIn"><button class="log">Login</button></a>
+                <a href="/logOut"><button class="reg">Register</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Affordable Slice -->
+
+    <section class="affordable">
+        <h1>Affordable Pricing</h1>
+        <p>We offer competitive prices for postage stamps and shipping labels, so you <br> can save money on your
+            shipments.
+        </p>
+        <div class="Note">
+            <h3><span>Note</span>: We only offer weight from 0,01 to 5kg</h3>
+        </div>
+        <div class="tables">
+            <table>
+                <tbody>
+                    <th>
+                        <tr>
+                            <td class="dif">Weights</td>
+                            <td class="dif">Prices</td>
+                        </tr>
+                    </th>
+                    <tr>
+                        <td>0.5</td>
+                        <td>200Dhs</td>
+                    </tr>
+                    <tr>
+                        <td>0.5</td>
+                        <td>200Dhs</td>
+                    </tr>
+                    <tr>
+                        <td>0.5</td>
+                        <td>200Dhs</td>
+                    </tr>
+                    <tr>
+                        <td>0.5</td>
+                        <td>200Dhs</td>
+                    </tr>
+                    <tr>
+                        <td>0.5</td>
+                        <td>200Dhs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <!-- footer section -->
+
+    <section class="footer">
+        <img src="http://baxify.com/assets/images/logo.svg" alt="">
+        <div class="icons">
+            <div class="footer-icons">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="hr"></div>
+            <div class="footer-fonts">
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-pinterest-fill"></i></a>
+            </div>
+            <div class="main-child">
+                © 2023 All rights reserved.
+                <a href="index.html">Baxify</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

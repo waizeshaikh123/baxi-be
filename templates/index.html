@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baxify</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="http://baxify.com/assets//static/images/logo.svg">
+</head>
+
+<body>
+    <!-- nav-one -->
+    <nav class="nav-one">
+        <div class="row d-flex">
+            <div class="left d-flex">
+                <div class="email d-flex">
+                    <i class="ri-mail-line"></i>
+                    <span>baxify.contact@gmail.com</span>
+                </div>
+                <div class="call d-flex">
+                    <i class="ri-phone-fill"></i>
+                    <span>+1 512 434 6781</span>
+                </div>
+            </div>
+            <div class="right d-flex">
+                <div class="face d-flex">
+                    <i class="ri-facebook-fill"></i>
+                    <span>facebook</span>
+                </div>
+                <div class="ins d-flex">
+                    <i class="ri-instagram-line"></i>
+                    <span>instagram</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- nav one End -->
+
+    <!-- @2nd navbar -->
+
+    <nav class="nav-2nd">
+        <div class="row-2 d-flex">
+            <div class="logo">
+                <img src="/static/images/logo.png" alt="">
+                <i class="ri-menu-3-fill"></i>
+            </div>
+            <div class="list">
+                <ul class="d-flex">
+                    <li  class="{% if request.path == '/' %} active {% endif %}" ><a href="/">home</a></li>
+                    <li class="{% if request.path == '/pricing/' %} active {% endif %}" ><a href="/pricing">Pricing</a></li>
+                    <li class="{% if request.path == '/contact/' %} active {% endif %}" ><a href="/contact">Contact Us</a></li>
+                    <li class="{% if request.path == '/privacy-policy/' %} active {% endif %}" ><a href="/privacy-policy">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="btn">
+                <a href="/logIn"><button class="log">Login</button></a>
+                <a href="/logOut"><button class="reg">Register</button></a>
+            </div>
+        </div>
+    </nav>
+    <!-- @2nd nav End -->
+
+    <!-- hero section -->
+
+    <section class="hero-section">
+        <div class="row">
+            <div class="hero">
+                <h1>Save Time and Money with Online Shipping <span>Labels</span></h1>
+                <p>Reduce shipping costs and save time with <br> our online label services for all your <br> shipping
+                    needs.
+                </p>
+                <a href="#">Get Started</a>
+            </div>
+            <div class="hero">
+                <img src="/static/images/heroimage.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- hero section End -->
+
+    <!-- works section -->
+
+    <section class="work">
+        <h1>How it <span>Works</span></h1>
+        <p>Baxify allows you to quickly and easily create shipping labels for all your packages.</p>
+        <div class="row work-">
+            <div class="working">
+                <img src="/static/images/Openanaccount.png" alt="" width="70px">
+                <h3>Open an account</h3>
+                <p>Simply register your account and set up your profile and then you’re all set to go.</p>
+            </div>
+            <div class="working">
+                <img src="/static/images/BuyShippingLabel.png" alt="" width="70px">
+                <h3>Open an account</h3>
+                <p>Simply register your account and set up your profile and then you’re all set to go.</p>
+            </div>
+            <div class="working">
+                <img src="/static/images/PrintShippingLabel.png" alt="" width="70px">
+                <h3>Open an account</h3>
+                <p>Simply register your account and set up your profile and then you’re all set to go.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Work section End -->
+
+
+    <!-- postage shipping needs -->
+    <section class="postage">
+        <h1>24/7 Solution for Your <span>Postage</span> <br> and Shipping Needs</h1>
+        <div class="row">
+            <div class="needs">
+                <div class="main">
+                    <div class="image">
+                        <img src="/static/images/Printlabelsinoneclick.png" alt="">
+                    </div>
+                    <div class="text-postage">
+                        <h2>Print labels in one click</h2>
+                        <p>Print Official USPS’ & DHL shipping labels in just one click</p>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="image">
+                        <img src="/static/images/YourDeskBecomesPostOffice.png" alt="">
+                    </div>
+                    <div class="text-postage">
+                        <h2>Print labels in one click</h2>
+                        <p>Print Official USPS’ & DHL shipping labels in just one click</p>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="image">
+                        <img src="/static/images/AvailBestDiscounts (1).png" alt="">
+                    </div>
+                    <div class="text-postage">
+                        <h2>Print labels in one click</h2>
+                        <p>Print Official USPS’ & DHL shipping labels in just one click</p>
+                    </div>
+                </div>
+            </div>
+            <div class="needs">
+                <div class="main">
+                    <div class="image">
+                        <img src="/static/images/UserFriendlyInterface.png" alt="">
+                    </div>
+                    <div class="text-postage">
+                        <h2>Print labels in one click</h2>
+                        <p>Print Official USPS’ & DHL shipping labels in just one click</p>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="image">
+                        <img src="/static/images/EfficientShippingOptions.png" alt="">
+                    </div>
+                    <div class="text-postage">
+                        <h2>Print labels in one click</h2>
+                        <p>Print Official USPS’ & DHL shipping labels in just one click</p>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="image">
+                        <img src="/static/images/247CustomerSupport.png" alt="">
+                    </div>
+                    <div class="text-postage">
+                        <h2>Print labels in one click</h2>
+                        <p>Print Official USPS’ & DHL shipping labels in just one click</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- postage section End -->
+
+
+    <!-- Register avail section -->
+    <section class="register">
+        <div class="register-text">
+            <h1>Register Now and Avail Exciting Discounts</h1>
+            <a href="">Register Now</a>
+        </div>
+    </section>
+    <!-- Register Avail section End -->
+
+
+    <!-- footer section -->
+    <section class="footer">
+        <img src="/static/images/logo.png" alt="">
+        <div class="icons">
+            <div class="footer-icons">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="hr"></div>
+            <div class="footer-fonts">
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-pinterest-fill"></i></a>
+            </div>
+            <div class="main-child">
+                © 2023 All rights reserved.
+                <a href="index.html">Baxify</a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer section End -->
+</body>
+
+</html>
