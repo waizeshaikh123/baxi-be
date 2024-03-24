@@ -58,7 +58,7 @@ span{
 }
 .nav-2nd{
     background-color: #FFFFFF;
-    position: sticky;
+    position: fixed;
     top: 0;
     border-bottom: 1px solid rgb(241, 238, 238);
 }
@@ -71,12 +71,6 @@ ul li{
     font-size: 16px;
     margin: 30px;
 }
-/* .list ul li a:active{ */
-    /* color: #F8991D; */
-/* } */
-/* .list ul li a::-moz-focus-inner{
-    color: #F8991D;
-} */
 .logo i{
     display: none;
 }
